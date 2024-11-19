@@ -59,6 +59,7 @@
     {"id":{"name":"obj_zombie","path":"objects/obj_zombie/obj_zombie.yy",},},
     {"id":{"name":"rm_main","path":"rooms/rm_main/rm_main.yy",},},
     {"id":{"name":"rm_menu","path":"rooms/rm_menu/rm_menu.yy",},},
+    {"id":{"name":"Myfunction","path":"scripts/Myfunction/Myfunction.yy",},},
     {"id":{"name":"spr_ak47Empty","path":"sprites/spr_ak47Empty/spr_ak47Empty.yy",},},
     {"id":{"name":"spr_ak47Reload","path":"sprites/spr_ak47Reload/spr_ak47Reload.yy",},},
     {"id":{"name":"spr_ak47Shoot","path":"sprites/spr_ak47Shoot/spr_ak47Shoot.yy",},},

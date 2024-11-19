@@ -31,6 +31,9 @@
     "name":"spr_ak47Shoot",
     "path":"sprites/spr_ak47Shoot/spr_ak47Shoot.yy",
   },
-  "spriteMaskId":null,
+  "spriteMaskId":{
+    "name":"spr_ak47Shoot",
+    "path":"sprites/spr_ak47Shoot/spr_ak47Shoot.yy",
+  },
   "visible":true,
 }

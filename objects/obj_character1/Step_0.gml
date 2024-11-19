@@ -1,18 +1,29 @@
-/// @DnDAction : YoYo Games.Common.If_Variable
-/// @DnDVersion : 1
-/// @DnDHash : 221BB689
-/// @DnDArgument : "var" "__dnd_lives"
-/// @DnDArgument : "op" "3"
-if(__dnd_lives <= 0){	/// @DnDAction : YoYo Games.Instances.Create_Instance
-	/// @DnDVersion : 1
-	/// @DnDHash : 1E0AE866
-	/// @DnDParent : 221BB689
-	/// @DnDArgument : "objectid" "obj_Gameover"
-	/// @DnDSaveInfo : "objectid" "obj_Gameover"
+//get input
+	right_key = keyboard_check(ord("D"));
+	left_key = keyboard_check(ord("A"));
+	up_key = keyboard_check(ord("W"));
+	down_key = keyboard_check(ord("S"));
+
+
+//player movement
+
+	var _horizontal_key = right_key - left_key;
+	var _vertical_key = down_key - up_key;
+	move_dir = point_direction(0, 0, _horizontal_key, _vertical_key);
+
+	var _distance = point_distance(0, 0, _horizontal_key, _vertical_key);
+	_distance = clamp(_distance, 0, 1);
+	var _speed = _distance * move_speed;
+	xspeed = lengthdir_x(_speed, move_dir);
+	yspeed = lengthdir_y(_speed, move_dir);
+//move the player
+	x += xspeed;
+	y += yspeed;
+
+
+if(__dnd_lives <= 0)
+{
 	instance_create_layer(0, 0, "Instances", obj_Gameover);
 
-	/// @DnDAction : YoYo Games.Instances.Destroy_Instance
-	/// @DnDVersion : 1
-	/// @DnDHash : 52751494
-	/// @DnDParent : 221BB689
-	instance_destroy();}
+	instance_destroy();
+}

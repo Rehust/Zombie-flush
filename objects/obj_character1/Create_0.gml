@@ -1,5 +1,7 @@
-/// @DnDAction : YoYo Games.Instance Variables.Set_Lives
-/// @DnDVersion : 1
-/// @DnDHash : 6D54E02F
-/// @DnDArgument : "lives" "10"
-__dnd_lives = real(10);
+
+__dnd_lives = real(10);
+xspeed = 0;
+yspeed = 0;
+
+move_speed = 5;
+move_dir = 0;

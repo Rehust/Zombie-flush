@@ -2,8 +2,9 @@
 /// @DnDVersion : 1
 /// @DnDHash : 6FDC1084
 /// @DnDArgument : "var" "instance_exists(obj_character1)"
+/// @DnDArgument : "not" "1"
 /// @DnDArgument : "value" "true"
-if(instance_exists(obj_character1) == true){	/// @DnDAction : YoYo Games.Instances.Create_Instance
+if(!(instance_exists(obj_character1) == true)){	/// @DnDAction : YoYo Games.Instances.Create_Instance
 	/// @DnDVersion : 1
 	/// @DnDHash : 3006598C
 	/// @DnDParent : 6FDC1084

@@ -52,26 +52,26 @@
 	
 
 //shoot weapon
-	if shoot_timer > 0
-	{
-		shoot_timer--;
-	}
-	if shoot_key && shoot_timer <= 0
-	{
-		//reset shoot timer
-		shoot_timer = shoot_cooldown
-		
-		//create bullet
-		var _xOffset = lengthdir_x(weapon_length + weapon_offset, aim_dir);
-		var _yOffset = lengthdir_y(weapon_length + weapon_offset, aim_dir);
-		var _inst_bullet = instance_create_depth(x + _xOffset, centerY + _yOffset, depth-100, bulletObj);
-		
-		//change bullet's direction
-		with (_inst_bullet)
-		{
-			dir = other.aim_dir;
-		}
-	}
+if shoot_timer > 0
+{
+    shoot_timer--;
+}
+if shoot_key == 1 && shoot_timer <= 0
+{
+    //reset shoot timer
+    shoot_timer = shoot_cooldown;
+    
+    //create bullet
+    var _xOffset = lengthdir_x(weapon_length + weapon_offset, aim_dir);
+    var _yOffset = lengthdir_y(weapon_length + weapon_offset, aim_dir);
+    var _inst_bullet = instance_create_depth(x + _xOffset, centerY + _yOffset, depth-100, bulletObj);
+    
+    //change bullet's direction
+    with (_inst_bullet)
+    {
+        dir = other.aim_dir;
+    }
+}
 
 //death
 	if(__dnd_lives <= 0)

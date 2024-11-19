@@ -9,10 +9,10 @@ if(instance_exists(obj_player) == true){	/// @DnDAction : YoYo Games.Instances
 	/// @DnDParent : 6FDC1084
 	/// @DnDArgument : "xpos" "830"
 	/// @DnDArgument : "ypos" "irandom_range(0, 500)"
-	/// @DnDArgument : "objectid" "obj_zombie"
+	/// @DnDArgument : "objectid" "obj_zombie_chase"
 	/// @DnDArgument : "layer" ""Instances_1""
-	/// @DnDSaveInfo : "objectid" "obj_zombie"
-	instance_create_layer(830, irandom_range(0, 500), "Instances_1", obj_zombie);
+	/// @DnDSaveInfo : "objectid" "obj_zombie_chase"
+	instance_create_layer(830, irandom_range(0, 500), "Instances_1", obj_zombie_chase);
 
 	/// @DnDAction : YoYo Games.Instances.Set_Alarm
 	/// @DnDVersion : 1

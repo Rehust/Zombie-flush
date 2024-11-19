@@ -3,7 +3,7 @@ __dnd_lives = real(10);
 //variables for movement
 	xspeed = 0;
 	yspeed = 0;
-	move_speed = 5;
+	move_speed = 3;
 	move_dir = 0;
 
 //sprite control
@@ -21,7 +21,7 @@ __dnd_lives = real(10);
 	
 //weapon info
 	shoot_timer = 0;
-	shoot_cooldown = 9;
+	shoot_cooldown = 20;
 	
 	bulletObj = obj_bullet;
 	weapon_length = sprite_get_bbox_right(spr_ak47Shoot) - sprite_get_xoffset(spr_ak47Shoot);

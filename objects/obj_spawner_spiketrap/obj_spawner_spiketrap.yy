@@ -9,8 +9,8 @@
   "name":"obj_spawner_spiketrap",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objects",
-    "path":"folders/Objects.yy",
+    "name":"Game",
+    "path":"folders/Game.yy",
   },
   "parentObjectId":null,
   "persistent":false,

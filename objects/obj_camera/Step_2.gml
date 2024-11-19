@@ -3,9 +3,9 @@ var camW = camera_get_view_width(view_camera[0]);
 var camH = camera_get_view_height(view_camera[0]);
 
 //center on the player
-if instance_exists(obj_character1){
-	x = obj_character1.x - camW/2;
-	y = obj_character1.y - camH/2;
+if instance_exists(obj_player){
+	x = obj_player.x - camW/2;
+	y = obj_player.y - camH/2;
 }
 
 

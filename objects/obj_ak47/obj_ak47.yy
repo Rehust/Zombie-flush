@@ -6,8 +6,8 @@
   "name":"obj_ak47",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objects",
-    "path":"folders/Objects.yy",
+    "name":"Player",
+    "path":"folders/Player.yy",
   },
   "parentObjectId":null,
   "persistent":false,
@@ -28,8 +28,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_ak47",
-    "path":"sprites/spr_ak47/spr_ak47.yy",
+    "name":"spr_ak47Shoot",
+    "path":"sprites/spr_ak47Shoot/spr_ak47Shoot.yy",
   },
   "spriteMaskId":null,
   "visible":true,

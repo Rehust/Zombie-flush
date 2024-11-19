@@ -6,8 +6,8 @@
   "name":"obj_bridge",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objects",
-    "path":"folders/Objects.yy",
+    "name":"Obstacle",
+    "path":"folders/Obstacle.yy",
   },
   "parentObjectId":null,
   "persistent":false,

@@ -8,8 +8,8 @@
   "name":"obj_quit",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objects",
-    "path":"folders/Objects.yy",
+    "name":"Game",
+    "path":"folders/Game.yy",
   },
   "parentObjectId":{
     "name":"obj_gameOption",

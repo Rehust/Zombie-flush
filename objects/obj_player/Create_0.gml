@@ -21,7 +21,7 @@ __dnd_lives = real(10);
 	
 //weapon info
 	shoot_timer = 0;
-	shoot_cooldown = 9;
+	shoot_cooldown = 12;
 	
 	bulletObj = obj_bullet;
 	weapon_length = sprite_get_bbox_right(spr_ak47Shoot) - sprite_get_xoffset(spr_ak47Shoot);

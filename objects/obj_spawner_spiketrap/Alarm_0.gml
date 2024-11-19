@@ -3,7 +3,9 @@
 /// @DnDHash : 1FD3588C
 /// @DnDArgument : "var" "instance_exists(obj_character1)"
 /// @DnDArgument : "value" "true"
-if(instance_exists(obj_player) == true){	/// @DnDAction : YoYo Games.Instances.Create_Instance
+if(instance_exists(obj_character1) == true)
+{
+	/// @DnDAction : YoYo Games.Instances.Create_Instance
 	/// @DnDVersion : 1
 	/// @DnDHash : 3006598C
 	/// @DnDParent : 1FD3588C
@@ -18,4 +20,5 @@ if(instance_exists(obj_player) == true){	/// @DnDAction : YoYo Games.Instances
 	/// @DnDHash : 2DE0C84B
 	/// @DnDParent : 1FD3588C
 	/// @DnDArgument : "steps" "22"
-	alarm_set(0, 22);}
+	alarm_set(0, 22);
+}

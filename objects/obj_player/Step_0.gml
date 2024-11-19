@@ -37,44 +37,41 @@
 		aim_dir = point_direction(x, centerY, mouse_x, mouse_y);
 	//face direction
 		face = round(aim_dir / 180);
-		if face >= 2
+		if face == 2 
 		{
 			face = 0;
 		}
 	
-	//use the idle animation when not walking
+	//stop the animation when not walking
 		if xspeed == 0 && yspeed == 0
 		{
-			idle = true;
-			if face == 0 {sprite_index = spr_playerIdleRight;}
-			if face == 1 {sprite_index = spr_playerIdleLeft;}
+			image_index = 0;	
 		}
-		else {idle = false;}
-	//set player sprite if not idle
-		if idle == false{sprite_index = sprite[face];}
+	//set player sprite
+		sprite_index = sprite[face];
 	
 
 //shoot weapon
-	if shoot_timer > 0
-	{
-		shoot_timer--;
-	}
-	if shoot_key && shoot_timer <= 0
-	{
-		//reset shoot timer
-		shoot_timer = shoot_cooldown
-		
-		//create bullet
-		var _xOffset = lengthdir_x(weapon_length + weapon_offset, aim_dir);
-		var _yOffset = lengthdir_y(weapon_length + weapon_offset, aim_dir);
-		var _inst_bullet = instance_create_depth(x + _xOffset, centerY + _yOffset, depth-100, bulletObj);
-		
-		//change bullet's direction
-		with (_inst_bullet)
-		{
-			dir = other.aim_dir;
-		}
-	}
+if shoot_timer > 0
+{
+    shoot_timer--;
+}
+if shoot_key == 1 && shoot_timer <= 0
+{
+    //reset shoot timer
+    shoot_timer = shoot_cooldown;
+    
+    //create bullet
+    var _xOffset = lengthdir_x(weapon_length + weapon_offset, aim_dir);
+    var _yOffset = lengthdir_y(weapon_length + weapon_offset, aim_dir);
+    var _inst_bullet = instance_create_depth(x + _xOffset, centerY + _yOffset, depth-100, bulletObj);
+    
+    //change bullet's direction
+    with (_inst_bullet)
+    {
+        dir = other.aim_dir;
+    }
+}
 
 //death
 	if(__dnd_lives <= 0)

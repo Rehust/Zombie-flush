@@ -2,9 +2,9 @@
   "$GMSprite":"",
   "%Name":"spr_ak47Reload",
   "bboxMode":0,
-  "bbox_bottom":27,
+  "bbox_bottom":42,
   "bbox_left":0,
-  "bbox_right":49,
+  "bbox_right":75,
   "bbox_top":0,
   "collisionKind":1,
   "collisionTolerance":0,
@@ -31,7 +31,7 @@
   ],
   "gridX":0,
   "gridY":0,
-  "height":28,
+  "height":43,
   "HTile":false,
   "layers":[
     {"$GMImageLayer":"","%Name":"17bdb66d-fd8a-4e5b-9e96-94267c742f81","blendMode":0,"displayName":"default","isLocked":false,"name":"17bdb66d-fd8a-4e5b-9e96-94267c742f81","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
@@ -146,5 +146,5 @@
   },
   "type":0,
   "VTile":false,
-  "width":50,
+  "width":76,
 }

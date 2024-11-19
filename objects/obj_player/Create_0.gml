@@ -5,6 +5,7 @@ __dnd_lives = real(10);
 	yspeed = 0;
 	move_speed = 5;
 	move_dir = 0;
+	idle = false;
 
 //sprite control
 	centerY_offset = -20;
@@ -16,7 +17,6 @@ __dnd_lives = real(10);
 	face = 0;
 	sprite[0] = spr_playerRight;	
 	sprite[1] = spr_playerLeft;
-	
 	sprite_index = sprite[face];
 	
 //weapon info
@@ -27,8 +27,8 @@ __dnd_lives = real(10);
 	weapon_length = sprite_get_bbox_right(spr_ak47Shoot) - sprite_get_xoffset(spr_ak47Shoot);
 	
 	
-//weapon sprite
-	ak47_face = 0;
-	ak47[0] = spr_ak47Shoot;
-	ak47[1] = spr_ak47Empty;
-	ak47[2] = spr_ak47Reload;
+////weapon sprite
+//	ak47_face = 0;
+//	ak47[0] = spr_ak47Shoot;
+//	ak47[1] = spr_ak47Empty;
+//	ak47[2] = spr_ak47Reload;

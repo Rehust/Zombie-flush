@@ -37,18 +37,21 @@
 		aim_dir = point_direction(x, centerY, mouse_x, mouse_y);
 	//face direction
 		face = round(aim_dir / 180);
-		if face == 2 
+		if face >= 2
 		{
 			face = 0;
 		}
 	
-	//stop the animation when not walking
+	//use the idle animation when not walking
 		if xspeed == 0 && yspeed == 0
 		{
-			image_index = 0;	
+			idle = true;
+			if face == 0 {sprite_index = spr_playerIdleRight;}
+			if face == 1 {sprite_index = spr_playerIdleLeft;}
 		}
-	//set player sprite
-		sprite_index = sprite[face];
+		else {idle = false;}
+	//set player sprite if not idle
+		if idle == false{sprite_index = sprite[face];}
 	
 
 //shoot weapon

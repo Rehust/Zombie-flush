@@ -13,18 +13,21 @@ draw_set_halign(fa_center);
 draw_set_valign(fa_middle);
 
 draw_set_alpha(alpha);
-var gameoverOffset = -32;
-draw_text_transformed(camX + camW/2, camY + camH/2 + gameoverOffset, "Game over", 3, 3, 0);
+var _gameoverOffset = -32;
+draw_text_transformed(camX + camW/2, camY + camH/2 + _gameoverOffset, "Game over!", 2, 2, 0);
 
+
+var _cur_color = draw_get_color();
 //left click to restart
-var cur_color = draw_get_color();
-
 draw_set_color(c_white);
-var restartOffset = 80;
-draw_text_transformed(camX + camW/2, camY + camH/2 + restartOffset, "- Left click to restart the game -", 1, 1, 0);
+var _restartOffset = 40;
+draw_text_transformed(camX + camW/2, camY + camH/2 + _restartOffset, "- Left click to restart the game -", 0.5, 0.5, 0);
+
+//draw "Press M to go to menu"
+draw_text_transformed(camX + camW/2, camY + camH/2 + _restartOffset * 2, "- Press M to go to menu -", 0.5, 0.5, 0);
 
 //reset draw settings
-draw_set_color(cur_color);
+draw_set_color(_cur_color);
 draw_set_halign(fa_left);
 draw_set_valign(fa_top);
 draw_set_alpha(1);

@@ -12,7 +12,7 @@ __dnd_lives = real(10);
 
 	weapon_offset = 0;
 	aim_dir = 0;
-	
+		
 	face = 0;
 	sprite[0] = spr_playerRight;	
 	sprite[1] = spr_playerLeft;
@@ -27,8 +27,3 @@ __dnd_lives = real(10);
 	weapon_length = sprite_get_bbox_right(spr_ak47Shoot) - sprite_get_xoffset(spr_ak47Shoot);
 	
 	
-//weapon sprite
-	ak47_face = 0;
-	ak47[0] = spr_ak47Shoot;
-	ak47[1] = spr_ak47Empty;
-	ak47[2] = spr_ak47Reload;

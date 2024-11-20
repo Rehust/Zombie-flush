@@ -9,8 +9,8 @@
   "name":"obj_spawner_zombie",
   "overriddenProperties":[],
   "parent":{
-    "name":"Game",
-    "path":"folders/Game.yy",
+    "name":"Enemy",
+    "path":"folders/Enemy.yy",
   },
   "parentObjectId":null,
   "persistent":false,

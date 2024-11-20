@@ -76,7 +76,7 @@ if shoot_key == 1 && shoot_timer <= 0
 //death
 	if(__dnd_lives <= 0)
 	{
-		instance_create_layer(0, 0, "Instances", obj_Gameover);
+		instance_create_layer(0, 0, "Instances_1", obj_Gameover);
 
 		instance_destroy();
 	}

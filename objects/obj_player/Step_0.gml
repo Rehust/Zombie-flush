@@ -65,7 +65,8 @@ if shoot_key == 1 && shoot_timer <= 0
     var _xOffset = lengthdir_x(weapon_length + weapon_offset, aim_dir);
     var _yOffset = lengthdir_y(weapon_length + weapon_offset, aim_dir);
     var _inst_bullet = instance_create_depth(x + _xOffset, centerY + _yOffset, depth-100, bulletObj);
-    
+    audio_play_sound(snd_bullet, 1, false);
+	
     //change bullet's direction
     with (_inst_bullet)
     {

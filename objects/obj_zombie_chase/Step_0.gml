@@ -4,6 +4,7 @@
 	{
 		speed = 0;
 		face = 1;
+		image_speed = 2;
 	}
 	
 	if (dead && image_index >= image_number - 1) 

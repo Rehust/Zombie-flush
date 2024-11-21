@@ -1,4 +1,5 @@
-__dnd_lives = real(10);
+maxHp = 10
+__dnd_lives = maxHp;
 
 //variables for movement
 	xspeed = 0;

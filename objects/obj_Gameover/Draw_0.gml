@@ -24,7 +24,7 @@ var _restartOffset = 40;
 draw_text_transformed(camX + camW/2, camY + camH/2 + _restartOffset, "- Left click to restart the game -", 0.5, 0.5, 0);
 
 //draw "Press M to go to menu"
-draw_text_transformed(camX + camW/2, camY + camH/2 + _restartOffset * 2, "- Press M to go to menu -", 0.5, 0.5, 0);
+draw_text_transformed(camX + camW/2, camY + camH/2 + _restartOffset * 2, "- Press \"M\" to go to menu -", 0.5, 0.5, 0);
 
 //reset draw settings
 draw_set_color(_cur_color);

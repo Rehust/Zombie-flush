@@ -13,6 +13,7 @@ if place_meeting(x, y, obj_tree) || place_meeting(x, y, obj_river)
 if place_meeting(x, y, obj_zombie)
 {
     score += 10;
+	destroy = true;
 }
 
 // Bullet out of range

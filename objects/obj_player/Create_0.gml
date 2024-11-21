@@ -28,3 +28,6 @@ __dnd_lives = maxHp;
 	weapon_length = sprite_get_bbox_right(spr_ak47Shoot) - sprite_get_xoffset(spr_ak47Shoot);
 	
 	
+//hit timer
+	flicker = false;
+	flicker_timer = 10;

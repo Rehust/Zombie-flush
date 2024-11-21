@@ -74,6 +74,27 @@ if shoot_key == 1 && shoot_timer <= 0
     }
 }
 
+//Indication that player lose health
+	if flicker == true && flicker_timer > 0
+	{
+		flicker_timer--; 
+		
+		if flicker_timer mod 3 = 0
+		{
+			if image_alpha == 1 
+			{
+				image_alpha = 0;
+			} else {
+				image_alpha = 1;
+			}
+		}
+	}
+	if flicker_timer <= 0
+	{
+		image_alpha = 1;
+	}
+	
+
 //death
 	if(__dnd_lives <= 0)
 	{

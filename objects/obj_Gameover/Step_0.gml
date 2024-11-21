@@ -5,10 +5,6 @@ var _menu = keyboard_check(ord("M"));
 alpha += alphaspd;
 alpha = clamp(alpha, 0 , 1);
 
-//destroy all the zombie
-with (obj_zombie){
-	instance_destroy();
-}
 
 //timer for restart
 if _left_click == true {checkTimer = true;}

@@ -65,6 +65,7 @@ if shoot_key == 1 && shoot_timer <= 0
     var _xOffset = lengthdir_x(weapon_length + weapon_offset, aim_dir);
     var _yOffset = lengthdir_y(weapon_length + weapon_offset, aim_dir);
     var _inst_bullet = instance_create_depth(x + _xOffset, centerY + _yOffset, depth-100, bulletObj);
+	var _inst_bulletFx = instance_create_depth(x + _xOffset - 2, centerY + _yOffset - 2, depth-100, obj_bulletFx)
     audio_play_sound(snd_bullet, 1, false);
 	
     //change bullet's direction
@@ -72,6 +73,11 @@ if shoot_key == 1 && shoot_timer <= 0
     {
         dir = other.aim_dir;
     }
+	with (_inst_bulletFx)
+	{
+		image_angle = other.aim_dir;
+
+	}
 }
 
 //Indication that player lose health

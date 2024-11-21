@@ -6,10 +6,6 @@ x += xspd;
 y += yspd;
 
 // Collision
-if place_meeting(x, y, obj_tree) || place_meeting(x, y, obj_river)
-{
-    destroy = true;
-}
 if place_meeting(x, y, obj_zombie)
 {
     score += 10;

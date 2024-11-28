@@ -5,6 +5,10 @@ var _menu = keyboard_check(ord("M"));
 alpha += alphaspd;
 alpha = clamp(alpha, 0 , 1);
 
+//Take score
+if (instance_exists(obj_hud)){
+	player_score = obj_hud.player_score;
+}
 
 //timer for restart
 if _left_click == true {checkTimer = true;}

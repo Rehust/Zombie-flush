@@ -7,4 +7,4 @@ playerMaxHp = 0;
 
 //score
 timer = 0;
-score = 0;
+player_score = 0;

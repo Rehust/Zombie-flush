@@ -61,6 +61,7 @@ if shoot_key == 1 && shoot_timer <= 0
     //reset shoot timer
     shoot_timer = shoot_cooldown;
     
+	firing = true;
     //create bullet
     var _xOffset = lengthdir_x(weapon_length + weapon_offset, aim_dir);
     var _yOffset = lengthdir_y(weapon_length + weapon_offset, aim_dir);
@@ -76,8 +77,17 @@ if shoot_key == 1 && shoot_timer <= 0
 	with (_inst_bulletFx)
 	{
 		image_angle = other.aim_dir;
-
 	}
+}
+else {
+	firing = false;
+}
+
+if (firing == true){
+	ak47_face = 1;
+}
+else {
+	ak47_face = 0;
 }
 
 //Indication that player lose health

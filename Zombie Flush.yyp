@@ -63,6 +63,7 @@
     {"id":{"name":"snd_background","path":"sounds/snd_background/snd_background.yy",},},
     {"id":{"name":"snd_bullet","path":"sounds/snd_bullet/snd_bullet.yy",},},
     {"id":{"name":"snd_option","path":"sounds/snd_option/snd_option.yy",},},
+    {"id":{"name":"spr_ak47","path":"sprites/spr_ak47/spr_ak47.yy",},},
     {"id":{"name":"spr_ak47BulletFx","path":"sprites/spr_ak47BulletFx/spr_ak47BulletFx.yy",},},
     {"id":{"name":"spr_ak47Empty","path":"sprites/spr_ak47Empty/spr_ak47Empty.yy",},},
     {"id":{"name":"spr_ak47Reload","path":"sprites/spr_ak47Reload/spr_ak47Reload.yy",},},

@@ -18,18 +18,21 @@ draw_text_transformed(camX + camW/2, camY + camH/2 + _gameoverOffset, "Game over
 
 
 var _cur_color = draw_get_color();
-//left click to restart
-draw_set_color(c_white);
 var _Offset = 40;
 
 //draw Score
-draw_text_transformed(camX + camW/2, camY + camH/2  + _Offset * 0, "Score: " + string(obj_hud.player_score), 0.5, 0.5, 0);
+draw_set_color(c_yellow);
+draw_text_transformed(camX + camW/2, camY + camH/2  + _Offset * 0, "Score: " + string(global.player_score), 0.7, 0.7, 0);
+
+//draw kill count
+draw_text_transformed(camX + camW/2, camY + camH/2  + _Offset * 1, "Zombie killed: " + string(global.zombieKilled), 0.7, 0.7, 0);
+draw_set_color(c_white);
 
 //draw "Left click to restart the game"
-draw_text_transformed(camX + camW/2, camY + camH/2 + _Offset * 1, "- Left click to restart the game -", 0.5, 0.5, 0);
+draw_text_transformed(camX + camW/2, camY + camH/2 + _Offset * 2, "- Left click to restart the game -", 0.5, 0.5, 0);
 
 //draw "Press M to go to menu"
-draw_text_transformed(camX + camW/2, camY + camH/2 + _Offset * 2, "- Press \"M\" to go to menu -", 0.5, 0.5, 0);
+draw_text_transformed(camX + camW/2, camY + camH/2 + _Offset * 3, "- Press \"M\" to go to menu -", 0.5, 0.5, 0);
 
 //reset draw settings
 draw_set_color(_cur_color);

@@ -1,5 +1,5 @@
 //dead
-	if dead
+	if dead == true
 	{
 		speed = 0;
 		face = 1;
@@ -14,9 +14,9 @@
 //clean up zombie out of border
 	if x < -300 || x > room_width + 500
 	{
-		destroy = true;
+		instance_destroy();
 	}
 	if y < -300 || y > room_height + 500
 	{
-		destroy = true;
+		instance_destroy();
 	}

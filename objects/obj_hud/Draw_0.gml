@@ -10,7 +10,7 @@ if (instance_exists(obj_player)){
 
 	for (var i = 0; i < playerMaxHp; i++)
 	{
-		///shor current hp
+		///show current hp
 		var _image = 1;
 		if i + 1 <= playerHp {_image = 2;}
 	
@@ -28,5 +28,10 @@ if (instance_exists(obj_player)){
 		draw_set_font(fon_live);
 		draw_set_colour(c_red & $ffffff);
 		draw_set_alpha(1);
-		draw_text_transformed(_camX + _border + 30, _camY + _border + _sepScore + 7, string(player_score), 0.3, 0.3, image_angle);
+		draw_text_transformed(_camX + _border + 30, _camY + _border + _sepScore + 7, string(global.player_score), 0.3, 0.3, image_angle);
+		
+	// Draw ammo
+		
+		draw_text(_camX + _border, _camY + _border + _sepScore * 2, "Ammo: " + string(ammo));	
+
 }

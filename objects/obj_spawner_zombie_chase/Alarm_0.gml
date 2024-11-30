@@ -18,4 +18,5 @@ if(instance_exists(obj_player) == true){	/// @DnDAction : YoYo Games.Instances
 	/// @DnDVersion : 1
 	/// @DnDHash : 678F1CED
 	/// @DnDParent : 6FDC1084
-	alarm_set(0, 30);}
+	/// @DnDArgument : "steps" "30 * mul"
+	alarm_set(0, 30 * mul);}

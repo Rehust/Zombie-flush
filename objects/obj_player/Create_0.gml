@@ -32,6 +32,8 @@ __dnd_lives = maxHp;
 	ak47[0] = spr_ak47;
 	ak47[1] = spr_ak47Shoot;
 	
+	ammo = 60;
+	
 //Indication for losing health
 	flicker = false;
 	flicker_timer = 10;

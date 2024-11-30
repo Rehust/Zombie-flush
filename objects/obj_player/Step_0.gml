@@ -56,11 +56,11 @@ if shoot_timer > 0
 {
     shoot_timer--;
 }
-if shoot_key == 1 && shoot_timer <= 0
+if shoot_key == 1 && shoot_timer <= 0 && ammo > 0
 {
     //reset shoot timer
     shoot_timer = shoot_cooldown;
-    
+    ammo -= 1;
 	firing = true;
     //create bullet
     var _xOffset = lengthdir_x(weapon_length + weapon_offset, aim_dir);

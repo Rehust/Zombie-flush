@@ -7,6 +7,4 @@ alphaMul = 0.6;
 timer = 5;
 checkTimer = false;
 
-player_score = 0;
-
 depth = -10000;

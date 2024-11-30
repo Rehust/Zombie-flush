@@ -34,6 +34,7 @@
   "height":29,
   "HTile":false,
   "layers":[
+    {"$GMImageLayer":"","%Name":"21541fbd-5c60-4381-8ab4-d90efb4a84b1","blendMode":0,"displayName":"Layer 1","isLocked":false,"name":"21541fbd-5c60-4381-8ab4-d90efb4a84b1","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
     {"$GMImageLayer":"","%Name":"6f99634a-92b2-4f9c-a035-35c29441a048","blendMode":0,"displayName":"default","isLocked":false,"name":"6f99634a-92b2-4f9c-a035-35c29441a048","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
   ],
   "name":"spr_mag",

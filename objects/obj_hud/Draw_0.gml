@@ -26,12 +26,13 @@ if (instance_exists(obj_player)){
 	
 		//draw text score
 		draw_set_font(fon_live);
-		draw_set_colour(c_red & $ffffff);
+		draw_set_colour(c_white);
 		draw_set_alpha(1);
 		draw_text_transformed(_camX + _border + 30, _camY + _border + _sepScore + 7, string(global.player_score), 0.3, 0.3, image_angle);
 		
 	// Draw ammo
-		
-		draw_text(_camX + _border, _camY + _border + _sepScore * 2, "Ammo: " + string(ammo));	
-
+		draw_sprite(spr_bulletHud, image_index, _camX + _border, _camY + _border + _sepScore * 2);
+		draw_set_color(c_yellow);
+		draw_text_transformed(_camX + _border + 11, _camY + _border + _sepScore * 2 + 3, "x" + string(ammo), 0.5, 0.5, image_angle);	
+		draw_set_color(c_red);
 }

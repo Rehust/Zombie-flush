@@ -72,6 +72,7 @@
     {"id":{"name":"spr_background_main","path":"sprites/spr_background_main/spr_background_main.yy",},},
     {"id":{"name":"spr_background_menu","path":"sprites/spr_background_menu/spr_background_menu.yy",},},
     {"id":{"name":"spr_bullet","path":"sprites/spr_bullet/spr_bullet.yy",},},
+    {"id":{"name":"spr_bulletHud","path":"sprites/spr_bulletHud/spr_bulletHud.yy",},},
     {"id":{"name":"spr_exit","path":"sprites/spr_exit/spr_exit.yy",},},
     {"id":{"name":"spr_gameover","path":"sprites/spr_gameover/spr_gameover.yy",},},
     {"id":{"name":"spr_healthBar","path":"sprites/spr_healthBar/spr_healthBar.yy",},},

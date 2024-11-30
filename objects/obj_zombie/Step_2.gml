@@ -1,6 +1,13 @@
 
+<<<<<<< Updated upstream
+=======
+<<<<<<< HEAD
+if (destroy == true)
+=======
+>>>>>>> Stashed changes
 //destroy by being shot
 if destroy == true 
+>>>>>>> 06b078761bfb5d95fe5a036b6cc030dd2c563042
 {
 	global.player_score += 10;
 	

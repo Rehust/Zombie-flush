@@ -9,7 +9,7 @@
   "bitRate":128,
   "compression":0,
   "conversionMode":0,
-  "duration":0.20895,
+  "duration":0.20898,
   "name":"snd_bullet",
   "parent":{
     "name":"Sound",
@@ -21,5 +21,5 @@
   "sampleRate":44100,
   "soundFile":"snd_bullet.mp3",
   "type":0,
-  "volume":0.06,
+  "volume":0.84,
 }

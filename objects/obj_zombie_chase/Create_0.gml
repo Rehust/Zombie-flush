@@ -5,11 +5,7 @@ if(instance_exists(obj_player) == true)
 	speed = 3;
 }
 
-dead = false;
+is_shot = false;
 destroy = false;
-
-face = 0;
-sprite[0] = spr_zombie;
-sprite[1] = spr_zombieDead;
 
 dir = direction;

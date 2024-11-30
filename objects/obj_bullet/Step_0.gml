@@ -7,9 +7,8 @@ x += xspd;
 y += yspd;
 
 // Collision
-if place_meeting(x, y, obj_zombie)
+if place_meeting(x, y, obj_zombie) || place_meeting(x, y, obj_zombie_chase)
 {
-    score += 10;
 	destroy = true;
 }
 

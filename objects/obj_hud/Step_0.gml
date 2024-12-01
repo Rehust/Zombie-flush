@@ -16,7 +16,20 @@ if instance_exists(obj_player){
 	if timer % 60 == 0 {
 		global.player_score += 5;
 	}
+	// Kiểm tra và cập nhật điểm cao nhất
+	if (score > global.high_score) {
+	 global.high_score = score;
+
+    // Lưu điểm cao nhất vào tệp
+		ini_open("save_datazbflush.ini");
+		ini_write_real("Game", "HighScore", global.high_score);
+		ini_close();
+	
+	 // Hiển thị thông báo (tùy chọn)
+			show_debug_message("New High Score: " + string(global.high_score));
+	}
 }
+
 
 //get ammo
 if (instance_exists(obj_player)){

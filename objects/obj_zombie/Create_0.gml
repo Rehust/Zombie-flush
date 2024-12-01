@@ -9,7 +9,7 @@ if(instance_exists(obj_player) == true)
 		direction = 0;
 	}
 
-	speed = 3;
+	speed = 2.5;
 }
 
 is_shot = false;

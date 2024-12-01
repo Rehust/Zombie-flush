@@ -65,12 +65,11 @@ if shoot_key == 1 && shoot_timer <= 0 && ammo > 0
     //reset shoot timer
     shoot_timer = shoot_cooldown;
     ammo -= 1;
-	firing = true;
     //create bullet
     var _xOffset = lengthdir_x(weapon_length + weapon_offset, aim_dir);
     var _yOffset = lengthdir_y(weapon_length + weapon_offset, aim_dir);
     var _inst_bullet = instance_create_depth(x + _xOffset, centerY + _yOffset, depth-100, bulletObj);
-	var _inst_bulletFx = instance_create_depth(x + _xOffset - 2, centerY + _yOffset - 2, depth-100, obj_bulletFx)
+	var _inst_bulletFx = instance_create_depth(x + _xOffset - 2, centerY + _yOffset - 2, depth-100, obj_bulletFx);
     audio_play_sound(snd_bullet, 1, false);
 	
     //change bullet's direction
@@ -83,16 +82,20 @@ if shoot_key == 1 && shoot_timer <= 0 && ammo > 0
 		image_angle = other.aim_dir;
 	}
 }
-else {
-	firing = false;
-}
 
-if (firing == true){
-	ak47_face = 1;
-}
-else {
-	ak47_face = 0;
-}
+//Weapon control
+	if (shoot_timer > 0 && ak47_face != 1){
+		ak47_face = 1;
+		weapon_frame = 0;
+	}
+	if (shoot_timer <= 0 && ak47_face != 0) {
+		ak47_face = 0;
+		weapon_frame = 0;
+	}
+
+	//Make the frame not exceed the amount of subimage
+	weapon_frame %= sprite_get_number(ak47[ak47_face]);
+	weapon_frame++;
 
 //Indication that player lose health
 	if flicker == true && flicker_timer > 0

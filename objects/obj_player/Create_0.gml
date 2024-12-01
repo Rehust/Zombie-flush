@@ -23,7 +23,6 @@ __dnd_lives = maxHp;
 //weapon info
 	shoot_timer = 0;
 	shoot_cooldown = 20;
-	firing = false;
 	
 	bulletObj = obj_bullet;
 	weapon_length = sprite_get_bbox_right(spr_ak47Shoot) - sprite_get_xoffset(spr_ak47Shoot);
@@ -33,6 +32,7 @@ __dnd_lives = maxHp;
 	ak47[1] = spr_ak47Shoot;
 	
 	ammo = 60;
+	weapon_frame = 0;
 	
 //Indication for losing health
 	flicker = false;

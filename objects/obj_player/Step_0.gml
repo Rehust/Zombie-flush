@@ -5,6 +5,10 @@
 	down_key = keyboard_check(ord("S"));
 	shoot_key = mouse_check_button(mb_left);
 
+
+//Limit Hp
+	__dnd_lives = clamp(__dnd_lives, 0, 10);
+	
 //player movement
 #region
 	var _horizontal_key = right_key - left_key;

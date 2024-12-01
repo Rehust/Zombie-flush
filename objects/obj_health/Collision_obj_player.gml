@@ -1,5 +1,6 @@
 
 // Heal
-obj_player.__dnd_lives += heal;
+	obj_player.__dnd_lives += heal;
 
-instance_destroy();
+//Destroy
+	instance_destroy();

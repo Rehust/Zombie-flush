@@ -1,4 +1,4 @@
-maxHp = 10
+maxHp = 10;
 __dnd_lives = maxHp;
 
 //variables for movement

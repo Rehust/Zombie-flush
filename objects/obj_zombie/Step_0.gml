@@ -7,11 +7,11 @@
 
 
 //clean up zombie out of border
-	if x < -300 || x > room_width + 500
+	if x < -200 || x > room_width + 200
 	{
 		instance_destroy();
 	}
-	if y < -300 || y > room_height + 500
+	if y < -200 || y > room_height + 200
 	{
 		instance_destroy();
 	}

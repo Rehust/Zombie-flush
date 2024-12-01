@@ -1,6 +1,4 @@
 //Get direction to player
-	
-
 if(instance_exists(obj_player) == true)
 {
 	var _dirToPlayer = point_direction(x, y, obj_player.x, obj_player.y);

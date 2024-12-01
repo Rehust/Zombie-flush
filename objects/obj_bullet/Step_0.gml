@@ -6,11 +6,7 @@ yspd = lengthdir_y(spd, dir);
 x += xspd;
 y += yspd;
 
-// Collision
-if place_meeting(x, y, obj_zombie) || place_meeting(x, y, obj_zombie_chase)
-{
-	destroy = true;
-}
+//Collision with zombie is in zombie objects
 
 // Bullet out of range
 if point_distance(xstart, ystart, x, y) > max_dist

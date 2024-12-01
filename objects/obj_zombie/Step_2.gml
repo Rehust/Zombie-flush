@@ -6,6 +6,7 @@ if destroy == true
 	
 	global.enemyKillCount++;
 	global.zombieKilled++;
+	
 	//Determine if we should drop ammo
 	if global.enemyKillCount % 10 == 0 {
 		instance_create_depth(x, y, depth, obj_mag);

@@ -8,5 +8,3 @@ if(instance_exists(obj_player) == true)
 
 is_shot = false;
 destroy = false;
-
-dir = direction;

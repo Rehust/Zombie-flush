@@ -1,7 +1,7 @@
 
 //Flip zombie 
 	var _zombie_xscale = 1;
-	if (dir > 90 && dir < 270) {
+	if (direction > 90 && direction < 270) {
 		_zombie_xscale = -1;	
 	}
 	

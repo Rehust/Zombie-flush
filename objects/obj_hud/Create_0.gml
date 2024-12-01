@@ -14,4 +14,3 @@ ammo = 0;
 
 //Kill count
 global.enemyKillCount = 0; // for dropping ammo
-global.zombieKilled = 0; // for game over screen

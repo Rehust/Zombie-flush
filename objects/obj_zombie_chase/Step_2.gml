@@ -5,7 +5,6 @@ if destroy == true
 	global.player_score += 10;
 
 	global.enemyKillCount++;
-	global.zombieKilled++;
 	
 	//Determine if we should drop ammo
 	if global.enemyKillCount % 10 == 0 {

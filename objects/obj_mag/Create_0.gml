@@ -1,6 +1,6 @@
 depth = -y;
 
-mag = 20;
+mag = 15;
 image_speed	= 0.5;
 
 //floating

@@ -25,7 +25,7 @@ draw_set_color(c_yellow);
 draw_text_transformed(camX + camW/2, camY + camH/2  + _Offset * 0, "Score: " + string(global.player_score), 0.7, 0.7, 0);
 
 //draw kill count
-draw_text_transformed(camX + camW/2, camY + camH/2  + _Offset * 1, "Zombie killed: " + string(global.zombieKilled), 0.7, 0.7, 0);
+draw_text_transformed(camX + camW/2, camY + camH/2  + _Offset * 1, "Zombie killed: " + string(global.enemyKillCount), 0.7, 0.7, 0);
 draw_set_color(c_white);
 
 //draw "Left click to restart the game"
